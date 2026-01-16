@@ -1,0 +1,54 @@
+#crosshair {
+  position: absolute;
+  top: 53%;
+  left: 51.5%;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  margin-top: -5px;
+  pointer-events: none;
+}
+
+#crosshair::before,
+#crosshair::after {
+  content: "";
+  position: absolute;
+  background: white;
+}
+
+#crosshair::before {
+  width: 10px;
+  height: 2px;
+  top: 4px;
+  left: 0;
+}
+
+#crosshair::after {
+  width: 2px;
+  height: 10px;
+  left: 4px;
+  top: 0;
+}
+body.locked {
+  cursor: none;
+}
+
+#info {
+  position: fixed;
+  top: 8px;
+  left: 10px;
+
+  color: #000;
+  font-family: monospace;
+  font-size: 19px;
+
+  background: rgba(255, 255, 255, 0.6);
+  padding: 4px 8px;
+
+  border-radius: 4px;
+  z-index: 10;
+
+  user-select: none;
+  pointer-events: none;
+}
+
